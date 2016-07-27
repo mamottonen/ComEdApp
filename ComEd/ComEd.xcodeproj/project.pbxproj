@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		161456091D2EE87300FF4ABB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161456081D2EE87300FF4ABB /* HomeViewController.swift */; };
+		162B42801D3675800040F308 /* CalculatorTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162B427F1D3675800040F308 /* CalculatorTabBarController.swift */; };
+		162B428A1D36A6AE0040F308 /* CalculatorSinglePhaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162B42891D36A6AE0040F308 /* CalculatorSinglePhaseViewController.swift */; };
+		162B428C1D36A6E10040F308 /* CalculatorThreePhaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162B428B1D36A6E10040F308 /* CalculatorThreePhaseViewController.swift */; };
+		162B47471D2D906D00BCFA8E /* ClearanceDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162B47461D2D906D00BCFA8E /* ClearanceDataTableViewController.swift */; };
+		162B47491D2DF1A600BCFA8E /* ClearanceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162B47481D2DF1A600BCFA8E /* ClearanceData.swift */; };
+		163341DF1D47FF010035A75B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163341DE1D47FF010035A75B /* LoginViewController.swift */; };
+		163341E41D4800370035A75B /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 163341E31D4800370035A75B /* KeychainWrapper.m */; };
+		16577EB81D47B91F000F5663 /* LoadTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16577EB71D47B91F000F5663 /* LoadTypeTableViewController.swift */; };
+		16577EBA1D47BD03000F5663 /* LoadCapabilityBus.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16577EB91D47BD03000F5663 /* LoadCapabilityBus.txt */; };
+		16577EBC1D47BD10000F5663 /* LoadCapabilityConductor.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16577EBB1D47BD10000F5663 /* LoadCapabilityConductor.txt */; };
+		169794AA1D23117000624DE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169794A91D23117000624DE2 /* AppDelegate.swift */; };
+		169794B11D23117000624DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169794B01D23117000624DE2 /* Assets.xcassets */; };
+		169794B41D23117000624DE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169794B21D23117000624DE2 /* LaunchScreen.storyboard */; };
+		169794BF1D23117000624DE2 /* ComEdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169794BE1D23117000624DE2 /* ComEdTests.swift */; };
+		169794CA1D23117000624DE2 /* ComEdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169794C91D23117000624DE2 /* ComEdUITests.swift */; };
+		169D8AD51D2461B000E3CDB9 /* ComEd_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 169D8AD41D2461B000E3CDB9 /* ComEd_logo.png */; };
+		169D8AD91D246F0700E3CDB9 /* ClearanceByVoltageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169D8AD81D246F0700E3CDB9 /* ClearanceByVoltageTableViewController.swift */; };
+		169FCA491D25B0AE00DC9D84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169FCA481D25B0AE00DC9D84 /* Main.storyboard */; };
+		16EAB4031D415BFC00EC2785 /* LoadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EAB4021D415BFC00EC2785 /* LoadData.swift */; };
+		16EAB4051D415FE600EC2785 /* LoadDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EAB4041D415FE600EC2785 /* LoadDataTableViewController.swift */; };
+		16EAB4071D41621500EC2785 /* LoadBusSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EAB4061D41621500EC2785 /* LoadBusSelectTableViewController.swift */; };
+		16EAB4091D416B6500EC2785 /* LoadTableSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EAB4081D416B6500EC2785 /* LoadTableSelectTableViewController.swift */; };
+		16EAB40B1D416C8E00EC2785 /* LoadTables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EAB40A1D416C8E00EC2785 /* LoadTables.swift */; };
+		16EAB40D1D42ABDA00EC2785 /* clearances.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16EAB40C1D42ABDA00EC2785 /* clearances.txt */; };
+		16EAB40F1D42ABE100EC2785 /* LoadCapabilityMaster.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16EAB40E1D42ABE100EC2785 /* LoadCapabilityMaster.txt */; };
+		16F019821D46A5CE00EF37CA /* ComEd-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F019811D46A5CE00EF37CA /* ComEd-logo.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		169794BB1D23117000624DE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1697949E1D23117000624DE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 169794A51D23117000624DE2;
+			remoteInfo = ComEd;
+		};
+		169794C61D23117000624DE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1697949E1D23117000624DE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 169794A51D23117000624DE2;
+			remoteInfo = ComEd;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		161456081D2EE87300FF4ABB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		162B427F1D3675800040F308 /* CalculatorTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorTabBarController.swift; sourceTree = "<group>"; };
+		162B42891D36A6AE0040F308 /* CalculatorSinglePhaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorSinglePhaseViewController.swift; sourceTree = "<group>"; };
+		162B428B1D36A6E10040F308 /* CalculatorThreePhaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorThreePhaseViewController.swift; sourceTree = "<group>"; };
+		162B47461D2D906D00BCFA8E /* ClearanceDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClearanceDataTableViewController.swift; path = ../ClearanceDataTableViewController.swift; sourceTree = "<group>"; };
+		162B47481D2DF1A600BCFA8E /* ClearanceData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClearanceData.swift; sourceTree = "<group>"; };
+		163341DE1D47FF010035A75B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		163341E11D4800370035A75B /* ComEd-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ComEd-Bridging-Header.h"; sourceTree = "<group>"; };
+		163341E21D4800370035A75B /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeychainWrapper.h; path = ../../../../Downloads/KeychainWrapper/KeychainWrapper.h; sourceTree = "<group>"; };
+		163341E31D4800370035A75B /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeychainWrapper.m; path = ../../../../Downloads/KeychainWrapper/KeychainWrapper.m; sourceTree = "<group>"; };
+		16577EB71D47B91F000F5663 /* LoadTypeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadTypeTableViewController.swift; sourceTree = "<group>"; };
+		16577EB91D47BD03000F5663 /* LoadCapabilityBus.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LoadCapabilityBus.txt; path = "../../../../Desktop/ComEd App Data/LoadCapabilityBus.txt"; sourceTree = "<group>"; };
+		16577EBB1D47BD10000F5663 /* LoadCapabilityConductor.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LoadCapabilityConductor.txt; path = "../../../../Desktop/ComEd App Data/LoadCapabilityConductor.txt"; sourceTree = "<group>"; };
+		169794A61D23117000624DE2 /* ComEd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComEd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		169794A91D23117000624DE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		169794B01D23117000624DE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		169794B31D23117000624DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		169794B51D23117000624DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		169794BA1D23117000624DE2 /* ComEdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComEdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		169794BE1D23117000624DE2 /* ComEdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComEdTests.swift; sourceTree = "<group>"; };
+		169794C01D23117000624DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		169794C51D23117000624DE2 /* ComEdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComEdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		169794C91D23117000624DE2 /* ComEdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComEdUITests.swift; sourceTree = "<group>"; };
+		169794CB1D23117000624DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		169D8AD41D2461B000E3CDB9 /* ComEd_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ComEd_logo.png; sourceTree = SOURCE_ROOT; };
+		169D8AD81D246F0700E3CDB9 /* ClearanceByVoltageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClearanceByVoltageTableViewController.swift; sourceTree = "<group>"; };
+		169FCA481D25B0AE00DC9D84 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		16EAB4021D415BFC00EC2785 /* LoadData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadData.swift; sourceTree = "<group>"; };
+		16EAB4041D415FE600EC2785 /* LoadDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadDataTableViewController.swift; sourceTree = "<group>"; };
+		16EAB4061D41621500EC2785 /* LoadBusSelectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadBusSelectTableViewController.swift; sourceTree = "<group>"; };
+		16EAB4081D416B6500EC2785 /* LoadTableSelectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadTableSelectTableViewController.swift; sourceTree = "<group>"; };
+		16EAB40A1D416C8E00EC2785 /* LoadTables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadTables.swift; sourceTree = "<group>"; };
+		16EAB40C1D42ABDA00EC2785 /* clearances.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = clearances.txt; path = "../../../../Desktop/ComEd App Data/clearances.txt"; sourceTree = "<group>"; };
+		16EAB40E1D42ABE100EC2785 /* LoadCapabilityMaster.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LoadCapabilityMaster.txt; path = "../../../../Desktop/ComEd App Data/LoadCapabilityMaster.txt"; sourceTree = "<group>"; };
+		16F019811D46A5CE00EF37CA /* ComEd-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ComEd-logo.png"; path = "../../../../Desktop/ComEd-logo.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		169794A31D23117000624DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		169794B71D23117000624DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		169794C21D23117000624DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		163341E01D47FF150035A75B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				163341DE1D47FF010035A75B /* LoginViewController.swift */,
+				163341E21D4800370035A75B /* KeychainWrapper.h */,
+				163341E31D4800370035A75B /* KeychainWrapper.m */,
+				163341E11D4800370035A75B /* ComEd-Bridging-Header.h */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		1697949D1D23117000624DE2 = {
+			isa = PBXGroup;
+			children = (
+				169794A81D23117000624DE2 /* ComEd */,
+				169794BD1D23117000624DE2 /* ComEdTests */,
+				169794C81D23117000624DE2 /* ComEdUITests */,
+				169794A71D23117000624DE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		169794A71D23117000624DE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				169794A61D23117000624DE2 /* ComEd.app */,
+				169794BA1D23117000624DE2 /* ComEdTests.xctest */,
+				169794C51D23117000624DE2 /* ComEdUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		169794A81D23117000624DE2 /* ComEd */ = {
+			isa = PBXGroup;
+			children = (
+				169794A91D23117000624DE2 /* AppDelegate.swift */,
+				169794B21D23117000624DE2 /* LaunchScreen.storyboard */,
+				169FCA481D25B0AE00DC9D84 /* Main.storyboard */,
+				161456081D2EE87300FF4ABB /* HomeViewController.swift */,
+				163341E01D47FF150035A75B /* Login */,
+				16EAB4011D415BD300EC2785 /* Loads */,
+				16EAB4001D415B1000EC2785 /* Clearance */,
+				16EAB3FF1D415AFB00EC2785 /* Calculator */,
+				16EAB3F01D415AB100EC2785 /* Files */,
+				169794B01D23117000624DE2 /* Assets.xcassets */,
+				169794B51D23117000624DE2 /* Info.plist */,
+				16F019811D46A5CE00EF37CA /* ComEd-logo.png */,
+				169D8AD41D2461B000E3CDB9 /* ComEd_logo.png */,
+			);
+			path = ComEd;
+			sourceTree = "<group>";
+		};
+		169794BD1D23117000624DE2 /* ComEdTests */ = {
+			isa = PBXGroup;
+			children = (
+				169794BE1D23117000624DE2 /* ComEdTests.swift */,
+				169794C01D23117000624DE2 /* Info.plist */,
+			);
+			path = ComEdTests;
+			sourceTree = "<group>";
+		};
+		169794C81D23117000624DE2 /* ComEdUITests */ = {
+			isa = PBXGroup;
+			children = (
+				169794C91D23117000624DE2 /* ComEdUITests.swift */,
+				169794CB1D23117000624DE2 /* Info.plist */,
+			);
+			path = ComEdUITests;
+			sourceTree = "<group>";
+		};
+		16EAB3F01D415AB100EC2785 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				16EAB40C1D42ABDA00EC2785 /* clearances.txt */,
+				16577EB91D47BD03000F5663 /* LoadCapabilityBus.txt */,
+				16EAB40E1D42ABE100EC2785 /* LoadCapabilityMaster.txt */,
+				16577EBB1D47BD10000F5663 /* LoadCapabilityConductor.txt */,
+			);
+			name = Files;
+			sourceTree = "<group>";
+		};
+		16EAB3FF1D415AFB00EC2785 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				162B42891D36A6AE0040F308 /* CalculatorSinglePhaseViewController.swift */,
+				162B428B1D36A6E10040F308 /* CalculatorThreePhaseViewController.swift */,
+				162B427F1D3675800040F308 /* CalculatorTabBarController.swift */,
+			);
+			name = Calculator;
+			sourceTree = "<group>";
+		};
+		16EAB4001D415B1000EC2785 /* Clearance */ = {
+			isa = PBXGroup;
+			children = (
+				169D8AD81D246F0700E3CDB9 /* ClearanceByVoltageTableViewController.swift */,
+				162B47461D2D906D00BCFA8E /* ClearanceDataTableViewController.swift */,
+				162B47481D2DF1A600BCFA8E /* ClearanceData.swift */,
+			);
+			name = Clearance;
+			sourceTree = "<group>";
+		};
+		16EAB4011D415BD300EC2785 /* Loads */ = {
+			isa = PBXGroup;
+			children = (
+				16EAB4021D415BFC00EC2785 /* LoadData.swift */,
+				16EAB40A1D416C8E00EC2785 /* LoadTables.swift */,
+				16EAB4041D415FE600EC2785 /* LoadDataTableViewController.swift */,
+				16EAB4061D41621500EC2785 /* LoadBusSelectTableViewController.swift */,
+				16EAB4081D416B6500EC2785 /* LoadTableSelectTableViewController.swift */,
+				16577EB71D47B91F000F5663 /* LoadTypeTableViewController.swift */,
+			);
+			name = Loads;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		169794A51D23117000624DE2 /* ComEd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 169794CE1D23117000624DE2 /* Build configuration list for PBXNativeTarget "ComEd" */;
+			buildPhases = (
+				169794A21D23117000624DE2 /* Sources */,
+				169794A31D23117000624DE2 /* Frameworks */,
+				169794A41D23117000624DE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ComEd;
+			productName = ComEd;
+			productReference = 169794A61D23117000624DE2 /* ComEd.app */;
+			productType = "com.apple.product-type.application";
+		};
+		169794B91D23117000624DE2 /* ComEdTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 169794D11D23117000624DE2 /* Build configuration list for PBXNativeTarget "ComEdTests" */;
+			buildPhases = (
+				169794B61D23117000624DE2 /* Sources */,
+				169794B71D23117000624DE2 /* Frameworks */,
+				169794B81D23117000624DE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				169794BC1D23117000624DE2 /* PBXTargetDependency */,
+			);
+			name = ComEdTests;
+			productName = ComEdTests;
+			productReference = 169794BA1D23117000624DE2 /* ComEdTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		169794C41D23117000624DE2 /* ComEdUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 169794D41D23117000624DE2 /* Build configuration list for PBXNativeTarget "ComEdUITests" */;
+			buildPhases = (
+				169794C11D23117000624DE2 /* Sources */,
+				169794C21D23117000624DE2 /* Frameworks */,
+				169794C31D23117000624DE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				169794C71D23117000624DE2 /* PBXTargetDependency */,
+			);
+			name = ComEdUITests;
+			productName = ComEdUITests;
+			productReference = 169794C51D23117000624DE2 /* ComEdUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1697949E1D23117000624DE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Mottonen;
+				TargetAttributes = {
+					169794A51D23117000624DE2 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = J59U9P3YY3;
+					};
+					169794B91D23117000624DE2 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 169794A51D23117000624DE2;
+					};
+					169794C41D23117000624DE2 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 169794A51D23117000624DE2;
+					};
+				};
+			};
+			buildConfigurationList = 169794A11D23117000624DE2 /* Build configuration list for PBXProject "ComEd" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1697949D1D23117000624DE2;
+			productRefGroup = 169794A71D23117000624DE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				169794A51D23117000624DE2 /* ComEd */,
+				169794B91D23117000624DE2 /* ComEdTests */,
+				169794C41D23117000624DE2 /* ComEdUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		169794A41D23117000624DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169794B41D23117000624DE2 /* LaunchScreen.storyboard in Resources */,
+				169FCA491D25B0AE00DC9D84 /* Main.storyboard in Resources */,
+				16F019821D46A5CE00EF37CA /* ComEd-logo.png in Resources */,
+				16EAB40D1D42ABDA00EC2785 /* clearances.txt in Resources */,
+				169794B11D23117000624DE2 /* Assets.xcassets in Resources */,
+				16EAB40F1D42ABE100EC2785 /* LoadCapabilityMaster.txt in Resources */,
+				16577EBC1D47BD10000F5663 /* LoadCapabilityConductor.txt in Resources */,
+				169D8AD51D2461B000E3CDB9 /* ComEd_logo.png in Resources */,
+				16577EBA1D47BD03000F5663 /* LoadCapabilityBus.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		169794B81D23117000624DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		169794C31D23117000624DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		169794A21D23117000624DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169D8AD91D246F0700E3CDB9 /* ClearanceByVoltageTableViewController.swift in Sources */,
+				16EAB40B1D416C8E00EC2785 /* LoadTables.swift in Sources */,
+				169794AA1D23117000624DE2 /* AppDelegate.swift in Sources */,
+				163341DF1D47FF010035A75B /* LoginViewController.swift in Sources */,
+				162B47471D2D906D00BCFA8E /* ClearanceDataTableViewController.swift in Sources */,
+				16EAB4071D41621500EC2785 /* LoadBusSelectTableViewController.swift in Sources */,
+				162B428A1D36A6AE0040F308 /* CalculatorSinglePhaseViewController.swift in Sources */,
+				162B42801D3675800040F308 /* CalculatorTabBarController.swift in Sources */,
+				16577EB81D47B91F000F5663 /* LoadTypeTableViewController.swift in Sources */,
+				163341E41D4800370035A75B /* KeychainWrapper.m in Sources */,
+				16EAB4091D416B6500EC2785 /* LoadTableSelectTableViewController.swift in Sources */,
+				162B428C1D36A6E10040F308 /* CalculatorThreePhaseViewController.swift in Sources */,
+				161456091D2EE87300FF4ABB /* HomeViewController.swift in Sources */,
+				16EAB4051D415FE600EC2785 /* LoadDataTableViewController.swift in Sources */,
+				16EAB4031D415BFC00EC2785 /* LoadData.swift in Sources */,
+				162B47491D2DF1A600BCFA8E /* ClearanceData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		169794B61D23117000624DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169794BF1D23117000624DE2 /* ComEdTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		169794C11D23117000624DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169794CA1D23117000624DE2 /* ComEdUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		169794BC1D23117000624DE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 169794A51D23117000624DE2 /* ComEd */;
+			targetProxy = 169794BB1D23117000624DE2 /* PBXContainerItemProxy */;
+		};
+		169794C71D23117000624DE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 169794A51D23117000624DE2 /* ComEd */;
+			targetProxy = 169794C61D23117000624DE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		169794B21D23117000624DE2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				169794B31D23117000624DE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		169794CC1D23117000624DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		169794CD1D23117000624DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		169794CF1D23117000624DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ComEd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.mottonen.ComEd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ComEd/ComEd-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		169794D01D23117000624DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ComEd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.mottonen.ComEd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ComEd/ComEd-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		169794D21D23117000624DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ComEdTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.mottonen.ComEdTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComEd.app/ComEd";
+			};
+			name = Debug;
+		};
+		169794D31D23117000624DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ComEdTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.mottonen.ComEdTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComEd.app/ComEd";
+			};
+			name = Release;
+		};
+		169794D51D23117000624DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ComEdUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.mottonen.ComEdUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ComEd;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		169794D61D23117000624DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ComEdUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.mottonen.ComEdUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ComEd;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		169794A11D23117000624DE2 /* Build configuration list for PBXProject "ComEd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169794CC1D23117000624DE2 /* Debug */,
+				169794CD1D23117000624DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		169794CE1D23117000624DE2 /* Build configuration list for PBXNativeTarget "ComEd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169794CF1D23117000624DE2 /* Debug */,
+				169794D01D23117000624DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		169794D11D23117000624DE2 /* Build configuration list for PBXNativeTarget "ComEdTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169794D21D23117000624DE2 /* Debug */,
+				169794D31D23117000624DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		169794D41D23117000624DE2 /* Build configuration list for PBXNativeTarget "ComEdUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169794D51D23117000624DE2 /* Debug */,
+				169794D61D23117000624DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1697949E1D23117000624DE2 /* Project object */;
+}
