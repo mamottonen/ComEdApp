@@ -778,7 +778,7 @@
                                     <constraint firstAttribute="width" constant="245" id="cPR-2E-wIY"/>
                                     <constraint firstAttribute="height" constant="85" id="qRi-Mp-9G3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                 <color key="textColor" red="0.93333333333333335" green="0.070588235294117646" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -994,7 +994,7 @@
                                     <constraint firstAttribute="height" constant="55" id="ABI-QW-IoR"/>
                                     <constraint firstAttribute="width" constant="292" id="k5L-Qd-ibI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                 <color key="textColor" red="0.93333333333333335" green="0.070588235294117646" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1072,9 +1072,9 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ComEd Access" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfS-E8-q6Q">
-                                <rect key="frame" x="28" y="33" width="264" height="52"/>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restricted Access" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfS-E8-q6Q">
+                                <rect key="frame" x="14" y="35" width="293" height="48"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="35"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1122,7 +1122,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Uzn-QM-XOg" firstAttribute="top" secondItem="zzh-g6-VIt" secondAttribute="bottom" constant="45" id="1Lb-jZ-8Nq"/>
                             <constraint firstItem="zzh-g6-VIt" firstAttribute="top" secondItem="Mw8-qb-slU" secondAttribute="bottom" constant="22" id="4Ke-UW-MM6"/>
@@ -1130,27 +1130,45 @@
                             <constraint firstItem="yBw-m7-f7j" firstAttribute="centerX" secondItem="Smp-km-puW" secondAttribute="centerX" id="COi-sW-UlL"/>
                             <constraint firstItem="Mw8-qb-slU" firstAttribute="leading" secondItem="zzh-g6-VIt" secondAttribute="leading" id="Ced-RQ-J45"/>
                             <constraint firstItem="Mw8-qb-slU" firstAttribute="leading" secondItem="Smp-km-puW" secondAttribute="leadingMargin" constant="16" id="D1E-xa-4gH"/>
-                            <constraint firstItem="qfS-E8-q6Q" firstAttribute="top" secondItem="pMP-m6-hMW" secondAttribute="bottom" constant="33" id="J0S-4c-ZMO"/>
+                            <constraint firstItem="qfS-E8-q6Q" firstAttribute="top" secondItem="pMP-m6-hMW" secondAttribute="bottom" constant="35" id="J0S-4c-ZMO"/>
                             <constraint firstItem="yBw-m7-f7j" firstAttribute="top" secondItem="Uzn-QM-XOg" secondAttribute="bottom" constant="15" id="Nus-Cl-D9j"/>
                             <constraint firstItem="qfS-E8-q6Q" firstAttribute="centerX" secondItem="Smp-km-puW" secondAttribute="centerX" id="Z0T-Wq-PHA"/>
-                            <constraint firstItem="Mw8-qb-slU" firstAttribute="top" secondItem="qfS-E8-q6Q" secondAttribute="bottom" constant="18" id="e8N-VT-mGc"/>
+                            <constraint firstItem="Mw8-qb-slU" firstAttribute="top" secondItem="qfS-E8-q6Q" secondAttribute="bottom" constant="20" id="e8N-VT-mGc"/>
                             <constraint firstItem="Uzn-QM-XOg" firstAttribute="centerX" secondItem="Smp-km-puW" secondAttribute="centerX" id="hzf-FR-5Ia"/>
                             <constraint firstItem="Mw8-qb-slU" firstAttribute="centerX" secondItem="qfS-E8-q6Q" secondAttribute="centerX" id="s4U-2q-ezd"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="createInfoLabel" destination="yBw-m7-f7j" id="iVZ-iw-Gt5"/>
-                        <outlet property="loginButton" destination="Uzn-QM-XOg" id="dw6-Ef-C6Q"/>
-                        <outlet property="passwordTextField" destination="zzh-g6-VIt" id="wUy-0A-Epa"/>
-                        <outlet property="usernameTextField" destination="Mw8-qb-slU" id="spb-w0-78Q"/>
+                        <outlet property="loginButton" destination="Uzn-QM-XOg" id="V4d-X5-4b7"/>
+                        <outlet property="passwordTextField" destination="zzh-g6-VIt" id="984-Nx-yqG"/>
+                        <outlet property="usernameTextField" destination="Mw8-qb-slU" id="cvw-3o-m6L"/>
                         <segue destination="p1d-fi-YbD" kind="unwind" identifier="dismissLogin" unwindAction="unwindSegue:" id="eSn-hY-bb1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lei-mA-c8w" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="p1d-fi-YbD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1916" y="1080"/>
+            <point key="canvasLocation" x="2354" y="1344"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sRC-T0-N3e">
+            <objects>
+                <viewController id="6vk-OP-gSw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0aU-kr-Ggm"/>
+                        <viewControllerLayoutGuide type="bottom" id="33h-hC-7qQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iFD-Kj-9um">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lUw-1n-ep9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2705" y="1344"/>
         </scene>
     </scenes>
     <resources>

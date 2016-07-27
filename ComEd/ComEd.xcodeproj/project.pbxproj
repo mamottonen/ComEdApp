@@ -15,6 +15,8 @@
 		162B47491D2DF1A600BCFA8E /* ClearanceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162B47481D2DF1A600BCFA8E /* ClearanceData.swift */; };
 		163341DF1D47FF010035A75B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163341DE1D47FF010035A75B /* LoginViewController.swift */; };
 		163341E41D4800370035A75B /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 163341E31D4800370035A75B /* KeychainWrapper.m */; };
+		163341E61D4945100035A75B /* LoginInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163341E51D4945100035A75B /* LoginInformation.swift */; };
+		163341E81D4945D50035A75B /* login.txt in Resources */ = {isa = PBXBuildFile; fileRef = 163341E71D4945D50035A75B /* login.txt */; };
 		16577EB81D47B91F000F5663 /* LoadTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16577EB71D47B91F000F5663 /* LoadTypeTableViewController.swift */; };
 		16577EBA1D47BD03000F5663 /* LoadCapabilityBus.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16577EB91D47BD03000F5663 /* LoadCapabilityBus.txt */; };
 		16577EBC1D47BD10000F5663 /* LoadCapabilityConductor.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16577EBB1D47BD10000F5663 /* LoadCapabilityConductor.txt */; };
@@ -64,6 +66,8 @@
 		163341E11D4800370035A75B /* ComEd-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ComEd-Bridging-Header.h"; sourceTree = "<group>"; };
 		163341E21D4800370035A75B /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeychainWrapper.h; path = ../../../../Downloads/KeychainWrapper/KeychainWrapper.h; sourceTree = "<group>"; };
 		163341E31D4800370035A75B /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeychainWrapper.m; path = ../../../../Downloads/KeychainWrapper/KeychainWrapper.m; sourceTree = "<group>"; };
+		163341E51D4945100035A75B /* LoginInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInformation.swift; sourceTree = "<group>"; };
+		163341E71D4945D50035A75B /* login.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = login.txt; sourceTree = "<group>"; };
 		16577EB71D47B91F000F5663 /* LoadTypeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadTypeTableViewController.swift; sourceTree = "<group>"; };
 		16577EB91D47BD03000F5663 /* LoadCapabilityBus.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LoadCapabilityBus.txt; path = "../../../../Desktop/ComEd App Data/LoadCapabilityBus.txt"; sourceTree = "<group>"; };
 		16577EBB1D47BD10000F5663 /* LoadCapabilityConductor.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LoadCapabilityConductor.txt; path = "../../../../Desktop/ComEd App Data/LoadCapabilityConductor.txt"; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				163341DE1D47FF010035A75B /* LoginViewController.swift */,
+				163341E51D4945100035A75B /* LoginInformation.swift */,
 				163341E21D4800370035A75B /* KeychainWrapper.h */,
 				163341E31D4800370035A75B /* KeychainWrapper.m */,
 				163341E11D4800370035A75B /* ComEd-Bridging-Header.h */,
@@ -188,6 +193,7 @@
 		16EAB3F01D415AB100EC2785 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				163341E71D4945D50035A75B /* login.txt */,
 				16EAB40C1D42ABDA00EC2785 /* clearances.txt */,
 				16577EB91D47BD03000F5663 /* LoadCapabilityBus.txt */,
 				16EAB40E1D42ABE100EC2785 /* LoadCapabilityMaster.txt */,
@@ -342,6 +348,7 @@
 				16EAB40F1D42ABE100EC2785 /* LoadCapabilityMaster.txt in Resources */,
 				16577EBC1D47BD10000F5663 /* LoadCapabilityConductor.txt in Resources */,
 				169D8AD51D2461B000E3CDB9 /* ComEd_logo.png in Resources */,
+				163341E81D4945D50035A75B /* login.txt in Resources */,
 				16577EBA1D47BD03000F5663 /* LoadCapabilityBus.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +388,7 @@
 				162B428C1D36A6E10040F308 /* CalculatorThreePhaseViewController.swift in Sources */,
 				161456091D2EE87300FF4ABB /* HomeViewController.swift in Sources */,
 				16EAB4051D415FE600EC2785 /* LoadDataTableViewController.swift in Sources */,
+				163341E61D4945100035A75B /* LoginInformation.swift in Sources */,
 				16EAB4031D415BFC00EC2785 /* LoadData.swift in Sources */,
 				162B47491D2DF1A600BCFA8E /* ClearanceData.swift in Sources */,
 			);
